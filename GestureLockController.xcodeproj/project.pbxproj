@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD3C58981EB97529008525DA /* SHPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3C58971EB97529008525DA /* SHPasswordView.m */; };
+		CD3C589B1EB9767D008525DA /* SHPasswordInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3C589A1EB9767D008525DA /* SHPasswordInputView.m */; };
 		CD4225D11EB8588C004CA806 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4225D01EB8588C004CA806 /* main.m */; };
 		CD4225D41EB8588C004CA806 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4225D31EB8588C004CA806 /* AppDelegate.m */; };
 		CD4225D71EB8588C004CA806 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4225D61EB8588C004CA806 /* ViewController.m */; };
@@ -19,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD3C58961EB97529008525DA /* SHPasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPasswordView.h; sourceTree = "<group>"; };
+		CD3C58971EB97529008525DA /* SHPasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPasswordView.m; sourceTree = "<group>"; };
+		CD3C58991EB9767D008525DA /* SHPasswordInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPasswordInputView.h; sourceTree = "<group>"; };
+		CD3C589A1EB9767D008525DA /* SHPasswordInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPasswordInputView.m; sourceTree = "<group>"; };
 		CD4225CC1EB8588C004CA806 /* GestureLockController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GestureLockController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD4225D01EB8588C004CA806 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CD4225D21EB8588C004CA806 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -93,6 +99,10 @@
 		CD4225E61EB858DB004CA806 /* SHPasswordView */ = {
 			isa = PBXGroup;
 			children = (
+				CD3C58961EB97529008525DA /* SHPasswordView.h */,
+				CD3C58971EB97529008525DA /* SHPasswordView.m */,
+				CD3C58991EB9767D008525DA /* SHPasswordInputView.h */,
+				CD3C589A1EB9767D008525DA /* SHPasswordInputView.m */,
 			);
 			path = SHPasswordView;
 			sourceTree = "<group>";
@@ -183,9 +193,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD4225D71EB8588C004CA806 /* ViewController.m in Sources */,
+				CD3C589B1EB9767D008525DA /* SHPasswordInputView.m in Sources */,
 				CD4225EA1EB8596C004CA806 /* SHLockButton.m in Sources */,
 				CD4225F01EB87803004CA806 /* SHLockViewController.m in Sources */,
 				CD4225D41EB8588C004CA806 /* AppDelegate.m in Sources */,
+				CD3C58981EB97529008525DA /* SHPasswordView.m in Sources */,
 				CD4225ED1EB85D3A004CA806 /* SHLockView.m in Sources */,
 				CD4225D11EB8588C004CA806 /* main.m in Sources */,
 			);
@@ -350,6 +362,7 @@
 				CD4225E51EB8588C004CA806 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

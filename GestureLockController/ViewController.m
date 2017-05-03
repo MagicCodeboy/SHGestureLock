@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "SHLockViewController.h"
 #import "SHGestureLockController/SHLockView.h"
+#import "SHPasswordView.h"
 @interface ViewController ()<SHLockViewControllerDelegate>
 
 @end
@@ -103,6 +104,13 @@
     [self presentViewController:lock animated:YES completion:nil];
 }
 
+- (IBAction)inputPaywordOnClick:(id)sender {
+    SHPasswordView * passwordView = [[SHPasswordView alloc]initWithNormalImage:nil selectedImage:[UIImage imageNamed:@"circle"] lineColor:[UIColor lightGrayColor] passwordLength:6 finishHandler:^(SHPasswordView *passwordView, NSString *password) {
+        NSLog(@"输入的密码是---%@",password);
+        [passwordView hide];
+    }];
+    [passwordView show];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
